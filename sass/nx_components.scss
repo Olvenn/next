@@ -1,0 +1,96 @@
+/* Logo */
+
+.logo {
+    height: 3.25rem;
+    margin-left: 3rem;
+}
+
+// Search Box
+
+.search {
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__input {
+        font-family: inherit;
+        font-size: inherit;
+        color:  var(--color-grey-dark-1);
+        background-color: var(--color-grey-light-1);
+        border: none;
+        padding: .7rem 2rem;
+        border-radius: 100px;
+        width: 90%;
+        margin-right: -3.5rem;
+        transition: all .2s;
+
+        &:focus {
+            outline: none;
+            width: 100%;
+            background-color: var(--color-grey-light-2);
+        }
+
+        &::-webkit-input-placeholder {
+            font-weight: 300;
+            color: var(--color-grey-light-2);
+        }
+    }
+
+    &__button {
+        border: none;
+        background-color: transparent;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            transform: translate(2px);
+        }
+    }
+
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+        fill: var(--color-grey-light-3);
+    }
+
+}
+
+
+
+
+// User Navigation
+
+.user-nav {
+    
+    &__icon-box {
+
+    }
+
+    &__icon {
+        height: 2.25rem;
+        width: 2.25rem;
+        // fill: red;
+    }
+
+    &__notifocation {
+
+    }
+
+    &__user {
+
+    }
+
+    &__user-photo {
+        height: 3.75rem;
+        border-radius: 50%;
+    }
+
+    &__user-name {
+
+    }
+
+
+}
