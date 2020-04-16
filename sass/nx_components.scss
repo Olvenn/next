@@ -99,6 +99,7 @@
         width: 1.75rem;
         border-radius: 50%;
         background-color: var(--color-primary);
+        color: var(--color-grey-light-1);
         position: absolute;
         top: 1.5rem;
         right: 1.1rem;
@@ -209,7 +210,7 @@
 .overview {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--color-grey-light-2);
+    border-bottom:  var(--line);;
 
 
     &__heading {
@@ -218,6 +219,7 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         padding: 1.5rem 3rem;
+        color: var(--color-grey-dark-1);
     }
 
     &__stars {
@@ -233,21 +235,37 @@
     }
 
     &__location {
+        font-size: 1.2rem;
+        display: flex;
+        vertical-align: center;
+    }
 
+    &__icon-location {
+        margin-right: .5rem;
     }
 
     &__rating {
+        align-self: stretch;
+        background-color: var(--color-primary);
+        margin-left:3rem;
+        color: #fff;
+        padding: 2.25rem;
 
-
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     &__rating-avarage {
-
+        font-size: 2.25rem;
+        font-weight: 300;
         
     }
 
     &__rating-count {
-
+        font-size: .8rem;
+        text-transform: uppercase;
         
     }
 }
@@ -289,3 +307,74 @@
         transform: scale(1);
     }
 }
+/*paragraph*/
+.paragraph:not(:last-of-type) {
+    margin-bottom: 2rem;
+}
+
+/*list*/
+.list {
+    list-style: none;
+    margin: 3rem 0;
+    padding: 3rem 0;
+    border-top: var(--line);
+    border-bottom: var(--line);
+
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        flex: 0 0 50%;
+        margin-bottom: .7rem;
+    }
+
+    &__item::before {
+        content: "";
+        display: inline-block;
+        height: 1.2rem;
+        width: 1.2rem;
+        margin-right: .7rem;
+
+        /* Older browsers
+        background-image: url(../img/chevron-thin-right.svg);
+        background-size: cover; */
+
+        /*New browsers*/
+        background-color: var(--color-primary);
+        -webkit-mask-image: url(../img/chevron-thin-right.svg);
+        -webkit-mask-size: cover;
+
+    }
+}
+
+/*recommend*/
+.recommend {
+    font-size: 1.3rem;
+    color: var(--color-grey-dark-3);
+
+    display: flex;
+    align-items: center;
+
+
+    &__photo {
+        box-sizing: content-box;
+        border-radius: 50%;
+        width: 4rem;
+        height: 4rem;
+        border: 3px solid #fff;
+
+        &:not(:last-child) {
+            margin-right: -1.5rem;
+        }
+    }
+
+    &__count {
+        margin-right: auto;
+    }
+
+    &__friends {
+
+    }
+
+}
+

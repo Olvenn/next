@@ -12,12 +12,15 @@
 
 --color-grey-dark-1: #54483A;
 --color-grey-dark-2: #f1ebeb;
+--color-grey-dark-3: rgb(151, 129, 103);
 
 
 --font-primary: 'Nunito', sans-serif;
 --font-display: 'Josefin Sans', sans-serif;
 
---shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+--line: 5px solid var(--color-grey-light-2);
+--shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .4);
+--shadow-light: 0 2rem 5rem rgba(0,0,0, .2);
 }
 
 
@@ -41,7 +44,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     line-height: 1.6;
-    color: var(--color-grey-dark-2);
+    color: var(--color-grey-dark-1);
     background-image: linear-gradient(to left bottom, var(--color-primary), var(--color-primary-dark));
     background-size: cover;
     background-repeat: no-repeat;
