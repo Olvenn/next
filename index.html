@@ -11,22 +11,25 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
+
     <title>nexter &mdash; your home, your freedom</title>
 </head>
 
 <body class="container">
+    <div style="display: none">
+        <include src="img/sprite.svg"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"></include>
+      </div>
+
     <div class="container">
         <header class="header">
-            <img src="img/logo.png" alt="nex" class="logo">
+            <img src="img/favicon.png" alt="nex" class="logo">
             <form action="#" class="search">
                 <input type="text" class="search__input" placeholder="Search hotels">
-
                 <button class="search__button">
-                    <svg class="search__icon">
-                        <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                    <svg class="search__icon" viewBox="0 0 57 57">
+                        <use xlink:href="sprite.svg#icon-magnifying-glass"   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
                     </svg>
                 </button>
-
             </form>
             <nav class="user-nav">
                 <div class="user-nav__icon-box">
@@ -231,9 +234,29 @@
                             </figcaption>
                         </figure>
 
-                        <button class="btn-inline" Show all></button>
-
+                        <button class="btn-inline">Show all 
+                            <span class="btn-inline__review">
+                                &rarr;
+                            </span>
+                        </button>
                     </div>
+
+
+                </div>
+                
+                <div class="cta">
+                    <h2 class="cta__book-now">
+                        Good news! We have 4 free rooms for your selected dates!
+                    </h2>
+                    <button class="btn">
+                        <span class="btn__change btn__change--visible">
+                            Book now
+                        </span>
+                        <span class="btn__change btn__change--invisible">
+                            Only 4 rooms left
+                        </span>
+
+                    </button>
                 </div>
             </main>
         </div>
